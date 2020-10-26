@@ -25,9 +25,10 @@ public class RP2021A {
         
         double[] distancias = new double[instancias.size()];
         
-        Patron j = new Patron("","", new double[]{2.4,3.3,5.6,7.8});
+        Patron j = new Patron("","", new double[]{2.4,3.3});
         for(int x = 0 ; x<  instancias.size();x++){
             distancias[x] =    instancias.get(x).calcularDistancia(j);
+            System.out.println(distancias[x]);
         }
         
                
